@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Activator
+  - Note
+  - rhythm_ball
   layers:
   - Default
   - TransparentFX
@@ -12,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - rhythm_ball
   - 
   - 
   - 
