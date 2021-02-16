@@ -4,12 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Note
+  - Activator
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Note
+  - 
   - Water
   - UI
   - 
@@ -41,4 +41,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Arrows
+    uniqueID: 236476863
     locked: 0
