@@ -11,7 +11,7 @@ public class ButtonController : MonoBehaviour
 
     public KeyCode keyToPress;
 
-    bool active = false;
+    
     public GameObject note;
 
     public bool createMode;
