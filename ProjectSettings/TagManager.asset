@@ -5,14 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Activator
+  - Note
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Notes
   - Water
   - UI
-  - 
+  - Activators
   - 
   - 
   - 
@@ -44,4 +45,10 @@ TagManager:
     locked: 0
   - name: Arrows
     uniqueID: 236476863
+    locked: 0
+  - name: Activators
+    uniqueID: 837348739
+    locked: 0
+  - name: Notes
+    uniqueID: 1051872659
     locked: 0
