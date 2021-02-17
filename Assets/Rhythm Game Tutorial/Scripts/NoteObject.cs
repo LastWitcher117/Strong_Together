@@ -4,16 +4,26 @@ using UnityEngine;
 
 public class NoteObject : MonoBehaviour
 {
+    Rigidbody2D rb;
+    public float speed;
+
     public bool canBePressed;
 
     public KeyCode keyToPress;
 
     public GameObject hitEffect, goodEffect, perfectEffect, missEffect;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //rb.velocity = new Vector2(-speed, 0);
+    }
+
+    private void Awake()
+    {
+        //rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

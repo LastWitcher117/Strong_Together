@@ -11,23 +11,41 @@ public class ButtonController : MonoBehaviour
 
     public KeyCode keyToPress;
 
+    bool active = false;
+    public GameObject note;
+
+    public bool createMode;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        theSR = GetComponent<SpriteRenderer>();    
+        theSR = GetComponent<SpriteRenderer>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyToPress))
+        /*if (createMode)
         {
-            theSR.sprite = pressedImage;
-        }
+            if (Input.GetKeyDown(keyToPress))
+            {
+                Instantiate(note, transform.position, Quaternion.identity);
+            }
+        }*/
+        //else
+        //{
 
-        if (Input.GetKeyUp(keyToPress))
-        {
-            theSR.sprite = defaultImage;
-        }
+            if (Input.GetKeyDown(keyToPress))
+            {
+                theSR.sprite = pressedImage;
+            }
+
+            if (Input.GetKeyUp(keyToPress))
+            {
+                theSR.sprite = defaultImage;
+            }
+        //}
     }
 }
