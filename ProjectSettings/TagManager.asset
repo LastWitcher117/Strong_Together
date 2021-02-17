@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Activator
   - Note
+  - rhythm_ball
   layers:
   - Default
   - TransparentFX
@@ -14,6 +15,7 @@ TagManager:
   - Water
   - UI
   - Activators
+  - rhythm_ball
   - 
   - 
   - 
@@ -40,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: foreground
+    uniqueID: 4232367051
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -51,4 +56,6 @@ TagManager:
     locked: 0
   - name: Notes
     uniqueID: 1051872659
+  - name: background
+    uniqueID: 2941852391
     locked: 0

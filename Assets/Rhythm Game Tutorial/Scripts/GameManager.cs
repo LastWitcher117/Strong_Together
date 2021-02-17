@@ -22,9 +22,12 @@ public class GameManager : MonoBehaviour
     public int currentMultiplier;
     public int multiplierTracker = 0;
     public int[] multiplierThreshholds;
+    public int comboCounter = 0;
 
     public Text scoreText;
     public Text multipliertText;
+    public Text comboText;
+    public GameObject comboDisplay;
 
 
     // Start is called before the first frame update
@@ -49,6 +52,11 @@ public class GameManager : MonoBehaviour
                 theMusic.Play();
             }
         }
+
+        if (comboCounter >0)
+        {
+            comboDisplay.SetActive(true);
+        }
     }
 
     public void NoteHit()
@@ -69,6 +77,7 @@ public class GameManager : MonoBehaviour
         multipliertText.text = "Multiplier: x" + currentMultiplier;
 
         //currentScore += scorePerNote * currentMultiplier;
+        comboText.text = "Combo: " + comboCounter;
 
         scoreText.text = "Score: " + currentScore;
 
@@ -77,6 +86,7 @@ public class GameManager : MonoBehaviour
     public void NormalHit()
     {
         currentScore += scorePerNote * currentMultiplier;
+        comboCounter++;
         NoteHit();
 
     }
@@ -84,12 +94,14 @@ public class GameManager : MonoBehaviour
     public void GoodHit()
     {
         currentScore += scorePerGoodNote * currentMultiplier;
+        comboCounter++;
         NoteHit();
     }
 
     public void PerfectHit()
     {
         currentScore += scorePerPerfectNote * currentMultiplier;
+        comboCounter++;
         NoteHit();
     }
 
@@ -99,7 +111,11 @@ public class GameManager : MonoBehaviour
 
         currentMultiplier = 1;
         multiplierTracker = 0;
-
+        comboCounter = 0;
         multipliertText.text = "Multiplier: X" + currentMultiplier;
+
+        comboText.text = "Combo: " + comboCounter;
+        comboDisplay.SetActive(false);
+            
     }
 }
