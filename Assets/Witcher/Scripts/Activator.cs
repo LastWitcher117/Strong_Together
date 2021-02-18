@@ -8,7 +8,7 @@ public class Activator : MonoBehaviour
 
     public KeyCode key;
     bool active = false;
-    GameObject note;
+    GameObject note, gm;
     Color old;
     public bool createMode;
     public GameObject n;
@@ -16,6 +16,7 @@ public class Activator : MonoBehaviour
 
     private void Start()
     {
+        gm = GameObject.Find("GameManager");
         old = sr.color;
     }
 
@@ -42,29 +43,39 @@ public class Activator : MonoBehaviour
             if (Input.GetKeyDown(key) && active)
             {
                 Destroy(note);
+                gm.GetComponent<Game_Manager>().AddStreak();
                 AddScore();
             }
-        }
+            else if ((Input.GetKeyDown(key) && !active))
+            {
+                gm.GetComponent<Game_Manager>().ResetStreak();
+            }
+        }   
     }
 
     private void OnTriggerEnter(Collider coll)
     {
-        active = true;
+        if (coll.gameObject.tag == "WinNote")
+        {
+            gm.GetComponent<Game_Manager>().Win();
+        }
 
-        if(coll.gameObject.tag == "Note")
+        if (coll.gameObject.tag == "Note")
         {
             note = coll.gameObject;
+            active = true;
         }
     }
 
     private void OnTriggerExit(Collider coll)
     {
         active = false;
+        gm.GetComponent<Game_Manager>().ResetStreak();
     }
 
     void AddScore()
     {
-        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + 100);
+        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + gm.GetComponent<Game_Manager>().GetScore());
     }
 
     IEnumerator Pressed()

@@ -8,6 +8,7 @@ TagManager:
   - Note
   - rhythm_ball
   - last_letter
+  - WinNote
   layers:
   - Default
   - TransparentFX
