@@ -7,6 +7,8 @@ TagManager:
   - Activator
   - Note
   - rhythm_ball
+  - last_letter
+  - WinNote
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,6 @@ TagManager:
   - UI
   - Activators
   - rhythm_ball
-  - 
   - 
   - 
   - 
@@ -56,6 +57,7 @@ TagManager:
     locked: 0
   - name: Notes
     uniqueID: 1051872659
+    locked: 0
   - name: background
     uniqueID: 2941852391
     locked: 0

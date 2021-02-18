@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-
     public AudioSource theMusic;
     public bool startPlaying;
 
@@ -28,7 +27,6 @@ public class GameManager : MonoBehaviour
     public Text multipliertText;
     public Text comboText;
     public GameObject comboDisplay;
-
 
     // Start is called before the first frame update
     void Start()
