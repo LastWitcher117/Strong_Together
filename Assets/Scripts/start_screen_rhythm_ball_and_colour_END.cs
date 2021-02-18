@@ -25,6 +25,7 @@ public class start_screen_rhythm_ball_and_colour_END : MonoBehaviour
         if(other.tag == "rhythm_ball" && this.tag == "last_letter")
         {
             wobble.SetBool("wobbleTrigger", true);
+            Destroy(other.gameObject, 0.5f);
         }
     }
 
