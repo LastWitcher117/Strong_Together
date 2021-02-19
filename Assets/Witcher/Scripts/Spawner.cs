@@ -8,7 +8,7 @@ public class Spawner : MonoBehaviour
     public Transform[] points;
 
     public float bpm;
-    public float beat = (60/144) * 2;
+    public float beat = (60 / 145) * 2;
     private float timer;
 
     void Start()
