@@ -73,7 +73,7 @@ public class Game_Manager : MonoBehaviour
 
     void Lose()
     {
-        SceneManager.LoadScene("LoseScreen");
+        //SceneManager.LoadScene("LoseScreen");
     }
 
     public void Win()
