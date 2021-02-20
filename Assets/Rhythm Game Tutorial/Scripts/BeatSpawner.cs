@@ -13,6 +13,7 @@ public class BeatSpawner : MonoBehaviour
 
     private float prevTime;
     private List<Beat> beats;
+    private List<Onset> onsets;
 
     public float bpm;
     public float beat = (60 / 145) * 2;
@@ -21,12 +22,17 @@ public class BeatSpawner : MonoBehaviour
     void Awake()
     {
         beats = new List<Beat>();
+        onsets = new List<Onset>();
     }
 
     void Update()
     {
         float time = audioSource.time;
-        int counter = 0;
+
+        onsets.Clear();
+        rhythmData.GetFeatures<Onset>(onsets, prevTime, time);
+
+        /*int counter = 0;
         if (audioSource.isPlaying && time == 0 && counter < 1)
         {
             counter++;
@@ -38,9 +44,9 @@ public class BeatSpawner : MonoBehaviour
             note.transform.localPosition = Vector3.zero;
             GameObject note4 = Instantiate(notes[3], points[3]);
             note.transform.localPosition = Vector3.zero;*/
-        }
+       // }
 
-        beats.Clear();
+       /* beats.Clear();
 
         rhythmData.GetFeatures<Beat>(beats, prevTime, time);
 
@@ -67,7 +73,7 @@ public class BeatSpawner : MonoBehaviour
             {
                 GameObject note = Instantiate(notes[3], points[3]);
                 note.transform.localPosition = Vector3.zero;
-            }
+            }*/
             //GameObject note = Instantiate(notes[Random.Range(0, 4)], points[Random.Range(0, 4)]);
             //note.transform.localPosition = Vector3.zero;
             /*Debug.Log(beat.strength);
@@ -92,7 +98,7 @@ public class BeatSpawner : MonoBehaviour
                 note.transform.localPosition = Vector3.zero;
             }*/
 
-            /*foreach (Onset onset in onsets)
+            foreach (Onset onset in onsets)
             {
                 Debug.Log(onset.strength);
                 if (onset.strength > 0 && onset.strength < 0.5f)
@@ -114,7 +120,7 @@ public class BeatSpawner : MonoBehaviour
                 {
                     GameObject note = Instantiate(notes[0], points[0]);
                     note.transform.localPosition = Vector3.zero;
-                }*/
+                }
 
             //GameObject note = Instantiate(notes[Random.Range(0, 4)], points[Random.Range(0, 4)]);
             //note.transform.localPosition = Vector3.zero;

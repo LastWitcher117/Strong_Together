@@ -33,7 +33,7 @@ public class Activator : MonoBehaviour
         {
             if (Input.GetKeyDown(key))
             {
-                Instantiate(n,transform.position,Quaternion.identity);
+                Instantiate(n, transform.position, Quaternion.identity);
             }
         }
         else
@@ -48,7 +48,8 @@ public class Activator : MonoBehaviour
             }
             if (Input.GetKeyDown(key) && active)
             {
-                Destroy(note);
+                //Destroy(note);
+                note.SetActive(false);
                 gm.GetComponent<Game_Manager>().AddStreak();
                 AddScore();
             }
@@ -56,7 +57,7 @@ public class Activator : MonoBehaviour
             {
                 gm.GetComponent<Game_Manager>().ResetStreak();
             }
-        }   
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D coll)
@@ -76,9 +77,13 @@ public class Activator : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D coll)
     {
-        Debug.LogWarning("Exit funktioniert");
+        if (coll.gameObject.tag == "Note" && coll.gameObject.activeSelf)
+        {
+            Debug.LogWarning("Exit funktioniert");
+            active = false;
+            gm.GetComponent<Game_Manager>().ResetStreak();
+        }
         active = false;
-        gm.GetComponent<Game_Manager>().ResetStreak();
     }
 
     void AddScore()
