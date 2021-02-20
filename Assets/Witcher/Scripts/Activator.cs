@@ -59,8 +59,9 @@ public class Activator : MonoBehaviour
         }   
     }
 
-    private void OnTriggerEnter(Collider coll)
+    private void OnTriggerEnter2D(Collider2D coll)
     {
+        Debug.LogWarning("Enter funktioniert");
         if (coll.gameObject.tag == "WinNote")
         {
             gm.GetComponent<Game_Manager>().Win();
@@ -73,8 +74,9 @@ public class Activator : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider coll)
+    private void OnTriggerExit2D(Collider2D coll)
     {
+        Debug.LogWarning("Exit funktioniert");
         active = false;
         gm.GetComponent<Game_Manager>().ResetStreak();
     }
