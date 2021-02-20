@@ -5,6 +5,8 @@ using UnityEngine;
 public class Activator : MonoBehaviour
 {
     SpriteRenderer sr;
+    public Sprite defaultImage;
+    public Sprite pressedImage;
 
     public KeyCode key;
     bool active = false;
@@ -38,7 +40,11 @@ public class Activator : MonoBehaviour
         {
             if (Input.GetKeyDown(key))
             {
-                StartCoroutine(Pressed());
+                sr.sprite = pressedImage;
+            }
+            if (Input.GetKeyUp(key))
+            {
+                sr.sprite = defaultImage;
             }
             if (Input.GetKeyDown(key) && active)
             {

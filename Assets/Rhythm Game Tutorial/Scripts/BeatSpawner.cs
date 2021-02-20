@@ -26,6 +26,19 @@ public class BeatSpawner : MonoBehaviour
     void Update()
     {
         float time = audioSource.time;
+        int counter = 0;
+        if (audioSource.isPlaying && time == 0 && counter < 1)
+        {
+            counter++;
+            GameObject note = Instantiate(notes[0], points[0]);
+            note.transform.localPosition = Vector3.zero;
+            /*GameObject note2 = Instantiate(notes[1], points[1]);
+            note.transform.localPosition = Vector3.zero;
+            GameObject note3 = Instantiate(notes[2], points[2]);
+            note.transform.localPosition = Vector3.zero;
+            GameObject note4 = Instantiate(notes[3], points[3]);
+            note.transform.localPosition = Vector3.zero;*/
+        }
 
         beats.Clear();
 
