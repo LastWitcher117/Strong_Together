@@ -16164,6 +16164,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -320.33002
       objectReference: {fileID: 0}
+    - target: {fileID: 7062751978045904103, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7857197343241666519, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
       propertyPath: m_Enabled
       value: 0

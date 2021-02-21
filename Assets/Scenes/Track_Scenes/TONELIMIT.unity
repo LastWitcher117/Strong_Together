@@ -12878,6 +12878,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -437.33002
       objectReference: {fileID: 0}
+    - target: {fileID: 7062751978045904103, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d1083897c6f00ba469e5abb448ad210a, type: 3}
+    - target: {fileID: 7062751978045904103, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7062751978045904103, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: d2ebd04e447b9894ea687ad35949ced2, type: 2}
+    - target: {fileID: 7079033938307576694, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: rhythmData
+      value: 
+      objectReference: {fileID: 11400000, guid: 6ebb152ac8e6c1a47b6a93727a9f815d, type: 2}
     - target: {fileID: 7857197343241666519, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
       propertyPath: m_Enabled
       value: 0
