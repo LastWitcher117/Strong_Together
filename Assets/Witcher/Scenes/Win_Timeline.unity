@@ -2862,6 +2862,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8722274654236583182, guid: 1bcd0a09fab30f043985cc70a01ca4e9, type: 3}
   m_PrefabInstance: {fileID: 8722274652875298278}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8722274652875298280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5471464093610618982, guid: 1bcd0a09fab30f043985cc70a01ca4e9, type: 3}
+  m_PrefabInstance: {fileID: 8722274652875298278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8722274652875298281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2874,3 +2879,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d837875960e14664695bc42d97633a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8722274652875298282 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5927307218463117220, guid: 1bcd0a09fab30f043985cc70a01ca4e9, type: 3}
+  m_PrefabInstance: {fileID: 8722274652875298278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8722274652875298283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6954149508628838149, guid: 1bcd0a09fab30f043985cc70a01ca4e9, type: 3}
+  m_PrefabInstance: {fileID: 8722274652875298278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8722274652875298284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8722274652875298280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a7bc1580e6e2e4c8a3e274ff421277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 50
+  axis: {x: 0, y: 1, z: 0}
+--- !u!114 &8722274652875298285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8722274652875298282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a7bc1580e6e2e4c8a3e274ff421277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 50
+  axis: {x: 0, y: 1, z: 0}
+--- !u!114 &8722274652875298286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8722274652875298283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a7bc1580e6e2e4c8a3e274ff421277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 50
+  axis: {x: 0, y: 1, z: 0}
