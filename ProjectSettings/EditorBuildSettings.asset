@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_Ann.unity
     guid: 1092ac071a9bdb041927b16439be4608
   - enabled: 1
-    path: Assets/Witcher/Scenes/WinScreen.unity
+    path: Assets/Witcher/Scenes/Win_Nightime.unity
     guid: ca11a16686b24934c92de1e410f0d121
   - enabled: 1
     path: Assets/Scenes/Level_Select.unity
