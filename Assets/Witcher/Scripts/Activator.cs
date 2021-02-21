@@ -21,6 +21,8 @@ public class Activator : MonoBehaviour
 
     public GameObject hitEffect, goodEffect, perfectEffect, missEffect;
 
+    private Animator animator = null;
+
     private void Start()
     {
         gm = GameObject.Find("GameManager");
@@ -29,7 +31,7 @@ public class Activator : MonoBehaviour
 
     void Awake()
     {
-        sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -45,11 +47,7 @@ public class Activator : MonoBehaviour
         {
             if (Input.GetKeyDown(key))
             {
-                sr.sprite = pressedImage;
-            }
-            if (Input.GetKeyUp(key))
-            {
-                sr.sprite = defaultImage;
+                animator.SetTrigger("Hit");
             }
             if (Input.GetKeyDown(key) && active)
             {
