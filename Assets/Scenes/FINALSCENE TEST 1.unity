@@ -6006,6 +6006,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8932174678105932169, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 2149342339127560539, guid: 2377a0a70b5a2f441ae4186ce6a9c8a9, type: 3}
+    - target: {fileID: 8932174678105932169, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: goodEffect
+      value: 
+      objectReference: {fileID: 4200046881259747864, guid: bae6d957ec95eb64e98b9cf7b9d6e183, type: 3}
+    - target: {fileID: 8932174678105932169, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: missEffect
+      value: 
+      objectReference: {fileID: 7050538611725512803, guid: 75c0b8a212d4f9d47978a1fd52f4ea2e, type: 3}
+    - target: {fileID: 8932174678105932169, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
       propertyPath: defaultImage
       value: 
       objectReference: {fileID: 21300000, guid: a0a45cbcd4e78004f8cb2a4d3238453b, type: 3}
@@ -6013,6 +6025,10 @@ PrefabInstance:
       propertyPath: pressedImage
       value: 
       objectReference: {fileID: 21300000, guid: cdad9fb11a8355740919da5ca719ac03, type: 3}
+    - target: {fileID: 8932174678105932169, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: perfectEffect
+      value: 
+      objectReference: {fileID: 7109357785250694155, guid: c17253fee5a555641852501cbe180f95, type: 3}
     - target: {fileID: 8932174678124188083, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.83
@@ -6046,6 +6062,18 @@ PrefabInstance:
       value: -1.34
       objectReference: {fileID: 0}
     - target: {fileID: 8932174678825862499, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 2363672387633469551, guid: 7056f78e03e5934438859bd257af6a35, type: 3}
+    - target: {fileID: 8932174678825862499, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: goodEffect
+      value: 
+      objectReference: {fileID: 4200046881259747864, guid: bae6d957ec95eb64e98b9cf7b9d6e183, type: 3}
+    - target: {fileID: 8932174678825862499, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: missEffect
+      value: 
+      objectReference: {fileID: 7050538611725512803, guid: 75c0b8a212d4f9d47978a1fd52f4ea2e, type: 3}
+    - target: {fileID: 8932174678825862499, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
       propertyPath: defaultImage
       value: 
       objectReference: {fileID: 21300000, guid: 1cac2fcf4e17c7f48ae5ae757e4d287d, type: 3}
@@ -6053,6 +6081,10 @@ PrefabInstance:
       propertyPath: pressedImage
       value: 
       objectReference: {fileID: 21300000, guid: 435a75934a63e4f43a2d6678f4098b34, type: 3}
+    - target: {fileID: 8932174678825862499, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: perfectEffect
+      value: 
+      objectReference: {fileID: 7109357785250694155, guid: c17253fee5a555641852501cbe180f95, type: 3}
     - target: {fileID: 8932174679086111764, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8237461
@@ -6067,7 +6099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8932174679086111764, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.59
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 8932174679086111764, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6086,6 +6118,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8932174679402244522, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 4010687844031263739, guid: e480c50ab42213d42870b6694d9e5f2b, type: 3}
+    - target: {fileID: 8932174679402244522, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: goodEffect
+      value: 
+      objectReference: {fileID: 4010687844031263739, guid: e480c50ab42213d42870b6694d9e5f2b, type: 3}
+    - target: {fileID: 8932174679402244522, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: missEffect
+      value: 
+      objectReference: {fileID: 7050538611725512803, guid: 75c0b8a212d4f9d47978a1fd52f4ea2e, type: 3}
+    - target: {fileID: 8932174679402244522, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
       propertyPath: defaultImage
       value: 
       objectReference: {fileID: 21300000, guid: 564d01dbb7c0ac946998ea65179a7968, type: 3}
@@ -6093,6 +6137,10 @@ PrefabInstance:
       propertyPath: pressedImage
       value: 
       objectReference: {fileID: 21300000, guid: 520393f92a6ae8c44a718172e27d6b2b, type: 3}
+    - target: {fileID: 8932174679402244522, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: perfectEffect
+      value: 
+      objectReference: {fileID: 7109357785250694155, guid: c17253fee5a555641852501cbe180f95, type: 3}
     - target: {fileID: 8932174679421220716, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
       propertyPath: m_Name
       value: RHYTHM GAME
@@ -6174,6 +6222,18 @@ PrefabInstance:
       value: 0.35257435
       objectReference: {fileID: 0}
     - target: {fileID: 8932174679668610309, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 7984551193664408968, guid: 281249606ea9d314abac9984dcc14a20, type: 3}
+    - target: {fileID: 8932174679668610309, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: goodEffect
+      value: 
+      objectReference: {fileID: 4200046881259747864, guid: bae6d957ec95eb64e98b9cf7b9d6e183, type: 3}
+    - target: {fileID: 8932174679668610309, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: missEffect
+      value: 
+      objectReference: {fileID: 7050538611725512803, guid: 75c0b8a212d4f9d47978a1fd52f4ea2e, type: 3}
+    - target: {fileID: 8932174679668610309, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
       propertyPath: defaultImage
       value: 
       objectReference: {fileID: 21300000, guid: d446fb7bb84047043bc83f779fabd491, type: 3}
@@ -6181,6 +6241,10 @@ PrefabInstance:
       propertyPath: pressedImage
       value: 
       objectReference: {fileID: 21300000, guid: 8bc4e1bcd68f1194f87a47a6653f0d40, type: 3}
+    - target: {fileID: 8932174679668610309, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
+      propertyPath: perfectEffect
+      value: 
+      objectReference: {fileID: 7109357785250694155, guid: c17253fee5a555641852501cbe180f95, type: 3}
     - target: {fileID: 8932174679783508369, guid: 26750e8ce458fdb408d4b7c5ac773e6b, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 676
