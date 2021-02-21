@@ -92,8 +92,12 @@ public class Game_Manager : MonoBehaviour
         PlayerPrefs.SetInt("Multiplier", multiplier);
     }
 
-    public int GetScore()
+    
+
+
+
+    public int GetScore(int score)
     {
-        return 100 * multiplier;
+        return (100 + score) * multiplier;
     }
 }
