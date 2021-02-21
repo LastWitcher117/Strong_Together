@@ -83,7 +83,16 @@ public class Game_Manager : MonoBehaviour
             PlayerPrefs.SetInt("HighScore", PlayerPrefs.GetInt("Score"));
         }
 
-        SceneManager.LoadScene("WinScreen");
+        SceneManager.LoadScene("Win_Nightime");
+
+    } public void Win1()
+    {
+        if (PlayerPrefs.GetInt("HighScore") < PlayerPrefs.GetInt("Score"))
+        {
+            PlayerPrefs.SetInt("HighScore", PlayerPrefs.GetInt("Score"));
+        }
+
+        SceneManager.LoadScene("Win_Timeline");
     }
 
     void UpdateGUI()

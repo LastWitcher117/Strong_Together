@@ -95,6 +95,11 @@ public class Activator : MonoBehaviour
             gm.GetComponent<Game_Manager>().Win();
         }
 
+        if (coll.gameObject.tag == "WinNote1")
+        {
+            gm.GetComponent<Game_Manager>().Win1();
+        }
+
         if (coll.gameObject.tag == "Note")
         {
             note = coll.gameObject;

@@ -9,6 +9,7 @@ TagManager:
   - rhythm_ball
   - last_letter
   - WinNote
+  - WinNote1
   layers:
   - Default
   - TransparentFX
