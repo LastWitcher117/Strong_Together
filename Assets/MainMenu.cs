@@ -20,11 +20,11 @@ public class MainMenu : MonoBehaviour
     public void NightTimeRoot()
     {
         //load scene 1
-        SceneManager.LoadScene("FINALSCENE TEST");
+        SceneManager.LoadScene("NIGHTTIME ROOT");
     }
     public void ToneLimit()
     {
-        //load scene 2
+        SceneManager.LoadScene("TONELIMIT");
     }
 
     public void Back()
