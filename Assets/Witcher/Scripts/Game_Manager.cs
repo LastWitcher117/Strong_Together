@@ -13,7 +13,7 @@ public class Game_Manager : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetInt("Score", 0);
-        PlayerPrefs.SetInt("RockMeter", 50);
+        PlayerPrefs.SetInt("RockMeter", 25);
         PlayerPrefs.SetInt("Streak", 0);
         PlayerPrefs.SetInt("HighStreak", 0);
         PlayerPrefs.SetInt("Multiplier", 1);
