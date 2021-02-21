@@ -45,13 +45,10 @@ public class Activator : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(key))
-            {
-                animator.SetTrigger("Hit");
-            }
             if (Input.GetKeyDown(key) && active)
             {
-                if (Mathf.Abs(note.transform.position.x) > 0.25)
+                animator.SetTrigger("Hit");
+                if (Mathf.Abs(note.transform.position.x-this.gameObject.transform.position.x) > 0.25)
                 {
                     Debug.Log("Hit");
                     Instantiate(hitEffect, transform.position, hitEffect.transform.rotation);
@@ -59,7 +56,7 @@ public class Activator : MonoBehaviour
                     gm.GetComponent<Game_Manager>().AddStreak();
                     NormalHit();
                 }
-                if (Mathf.Abs(note.transform.position.x) > 0.05f)
+                if (Mathf.Abs(note.transform.position.x - this.gameObject.transform.position.x) > 0.05f)
                 {
                     Debug.Log("Good");
                     //GameManager.instance.GoodHit();
@@ -84,6 +81,7 @@ public class Activator : MonoBehaviour
             }
             else if ((Input.GetKeyDown(key) && !active))
             {
+                animator.SetTrigger("Hit");
                 gm.GetComponent<Game_Manager>().ResetStreak();
             }
         }
@@ -112,7 +110,7 @@ public class Activator : MonoBehaviour
             active = false;
             gm.GetComponent<Game_Manager>().ResetStreak();
             Instantiate(missEffect, transform.position, missEffect.transform.rotation);
-            note.SetActive(false);
+            coll.gameObject.SetActive(false);
             
         }
         active = false;
