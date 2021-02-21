@@ -1,22 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &8932174678825862499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6850903755966790680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8beb780947d06fd4cbcbe87fc544df06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultImage: {fileID: 0}
-  pressedImage: {fileID: 0}
-  key: 274
-  createMode: 0
-  n: {fileID: 0}
 --- !u!61 &3646398811151991688
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43,13 +26,13 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1216202, y: 0.8886105}
   m_EdgeRadius: 0
---- !u!114 &8932174678105932169
+--- !u!114 &8932174678825862499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6850903756089383174}
+  m_GameObject: {fileID: 6850903755966790680}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8beb780947d06fd4cbcbe87fc544df06, type: 3}
@@ -57,9 +40,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 0}
   pressedImage: {fileID: 0}
-  key: 273
+  key: 274
   createMode: 0
   n: {fileID: 0}
+  scorePerNote: 25
+  scorePerGoodNote: 50
+  scorePerPerfectNote: 100
+  hitEffect: {fileID: 2363672387633469551, guid: 7056f78e03e5934438859bd257af6a35, type: 3}
+  goodEffect: {fileID: 2363672387633469551, guid: 7056f78e03e5934438859bd257af6a35, type: 3}
+  perfectEffect: {fileID: 7109357785250694155, guid: c17253fee5a555641852501cbe180f95, type: 3}
+  missEffect: {fileID: 7050538611725512803, guid: 75c0b8a212d4f9d47978a1fd52f4ea2e, type: 3}
 --- !u!61 &1540102310319514625
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -86,13 +76,13 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0348973, y: 0.93197167}
   m_EdgeRadius: 0
---- !u!114 &8932174679668610309
+--- !u!114 &8932174678105932169
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6850903756745505967}
+  m_GameObject: {fileID: 6850903756089383174}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8beb780947d06fd4cbcbe87fc544df06, type: 3}
@@ -100,9 +90,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 0}
   pressedImage: {fileID: 0}
-  key: 276
+  key: 273
   createMode: 0
   n: {fileID: 0}
+  scorePerNote: 25
+  scorePerGoodNote: 50
+  scorePerPerfectNote: 100
+  hitEffect: {fileID: 2149342339127560539, guid: 2377a0a70b5a2f441ae4186ce6a9c8a9, type: 3}
+  goodEffect: {fileID: 2149342339127560539, guid: 2377a0a70b5a2f441ae4186ce6a9c8a9, type: 3}
+  perfectEffect: {fileID: 7109357785250694155, guid: c17253fee5a555641852501cbe180f95, type: 3}
+  missEffect: {fileID: 7050538611725512803, guid: 75c0b8a212d4f9d47978a1fd52f4ea2e, type: 3}
 --- !u!61 &5928345972467236291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -129,6 +126,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0782585, y: 0.88861036}
   m_EdgeRadius: 0
+--- !u!114 &8932174679668610309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6850903756745505967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8beb780947d06fd4cbcbe87fc544df06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultImage: {fileID: 0}
+  pressedImage: {fileID: 0}
+  key: 276
+  createMode: 0
+  n: {fileID: 0}
+  scorePerNote: 25
+  scorePerGoodNote: 50
+  scorePerPerfectNote: 100
+  hitEffect: {fileID: 7984551193664408968, guid: 281249606ea9d314abac9984dcc14a20, type: 3}
+  goodEffect: {fileID: 7984551193664408968, guid: 281249606ea9d314abac9984dcc14a20, type: 3}
+  perfectEffect: {fileID: 7109357785250694155, guid: c17253fee5a555641852501cbe180f95, type: 3}
+  missEffect: {fileID: 7050538611725512803, guid: 75c0b8a212d4f9d47978a1fd52f4ea2e, type: 3}
 --- !u!1 &8932174678645296274
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,23 +277,6 @@ Transform:
   m_Father: {fileID: 8932174679421220717}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8932174679402244522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8932174679402244520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8beb780947d06fd4cbcbe87fc544df06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultImage: {fileID: 0}
-  pressedImage: {fileID: 0}
-  key: 275
-  createMode: 0
-  n: {fileID: 0}
 --- !u!61 &2409851913590864006
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -299,6 +303,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.96262884, y: 0.874157}
   m_EdgeRadius: 0
+--- !u!114 &8932174679402244522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932174679402244520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8beb780947d06fd4cbcbe87fc544df06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultImage: {fileID: 0}
+  pressedImage: {fileID: 0}
+  key: 275
+  createMode: 0
+  n: {fileID: 0}
+  scorePerNote: 25
+  scorePerGoodNote: 50
+  scorePerPerfectNote: 100
+  hitEffect: {fileID: 4010687844031263739, guid: e480c50ab42213d42870b6694d9e5f2b, type: 3}
+  goodEffect: {fileID: 4010687844031263739, guid: e480c50ab42213d42870b6694d9e5f2b, type: 3}
+  perfectEffect: {fileID: 7109357785250694155, guid: c17253fee5a555641852501cbe180f95, type: 3}
+  missEffect: {fileID: 7050538611725512803, guid: 75c0b8a212d4f9d47978a1fd52f4ea2e, type: 3}
 --- !u!1 &8932174679421220716
 GameObject:
   m_ObjectHideFlags: 0

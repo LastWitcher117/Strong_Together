@@ -15,6 +15,11 @@ public class Activator : MonoBehaviour
     public bool createMode;
     public GameObject n;
 
+    public int scorePerNote = 25;
+    public int scorePerGoodNote = 50;
+    public int scorePerPerfectNote = 100;
+
+    public GameObject hitEffect, goodEffect, perfectEffect, missEffect;
 
     private void Start()
     {
@@ -48,10 +53,36 @@ public class Activator : MonoBehaviour
             }
             if (Input.GetKeyDown(key) && active)
             {
+                if (Mathf.Abs(note.transform.position.x) > 0.25)
+                {
+                    Debug.Log("Hit");
+                    Instantiate(hitEffect, transform.position, hitEffect.transform.rotation);
+                    note.SetActive(false);
+                    gm.GetComponent<Game_Manager>().AddStreak();
+                    NormalHit();
+                }
+                if (Mathf.Abs(note.transform.position.x) > 0.05f)
+                {
+                    Debug.Log("Good");
+                    //GameManager.instance.GoodHit();
+                    Instantiate(goodEffect, transform.position, goodEffect.transform.rotation);
+                    note.SetActive(false);
+                    gm.GetComponent<Game_Manager>().AddStreak();
+                    GoodHit();
+                }
+                else
+                {
+                    Debug.Log("Perfect");
+                    //GameManager.instance.PerfectHit();
+                    Instantiate(perfectEffect, transform.position, perfectEffect.transform.rotation);
+                    note.SetActive(false);
+                    gm.GetComponent<Game_Manager>().AddStreak();
+                    PerfectHit();
+                }
                 //Destroy(note);
-                note.SetActive(false);
-                gm.GetComponent<Game_Manager>().AddStreak();
-                AddScore();
+                //note.SetActive(false);
+                //gm.GetComponent<Game_Manager>().AddStreak();
+                //AddScore();
             }
             else if ((Input.GetKeyDown(key) && !active))
             {
@@ -82,13 +113,32 @@ public class Activator : MonoBehaviour
             Debug.LogWarning("Exit funktioniert");
             active = false;
             gm.GetComponent<Game_Manager>().ResetStreak();
+            Instantiate(missEffect, transform.position, missEffect.transform.rotation);
+            note.SetActive(false);
+            
         }
         active = false;
     }
 
-    void AddScore()
+    public void NormalHit()
     {
-        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + gm.GetComponent<Game_Manager>().GetScore());
+        AddScore(scorePerNote);
+
+    }
+
+    public void GoodHit()
+    {
+        AddScore(scorePerGoodNote);
+    }
+
+    public void PerfectHit()
+    {
+        AddScore(scorePerPerfectNote);
+    }
+
+    void AddScore(int score)
+    {
+        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + gm.GetComponent<Game_Manager>().GetScore(score));
     }
 
     IEnumerator Pressed()
