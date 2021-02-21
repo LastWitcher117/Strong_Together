@@ -13889,6 +13889,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2860301598965479454, guid: e7b783a126f1bec43b387f942ea43710, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6962504543896681139, guid: e7b783a126f1bec43b387f942ea43710, type: 3}
       propertyPath: m_Name
       value: ToneLimit Notes

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a061519b86f8e4f879a5cdbb4ad6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatTempo: 135
+  beatTempo: 145
   hasStarted: 0
 --- !u!50 &5400643922978835576
 Rigidbody2D:
